@@ -1,0 +1,187 @@
+<html lang="en">
+    <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color: #5d92a3;
+    
+        }
+    
+        /* Add a gray background color and some padding to the footer */
+        footer {
+        background-color: #5d92a3;
+        padding: 25px;
+        }
+        
+        body{
+            padding-top:50px;
+        }
+
+        .jumbotron{
+        background-color: #b6c8d4;
+        }
+    
+        .snow{
+        background-color: #b6c8d4;
+        }
+
+        #paper{
+        background-color: #ada589;
+        }
+    </style>
+    </head>
+    <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">The North Pole</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li ><a href="index.html">Home</a></li>
+            <li><a href="north.html">The North Pole</a></li>
+            <li><a href="santa.html">Santa Claus</a></li>
+            <li><a href="traditions.html">Traditions</a></li>
+        </ul>
+        
+        </div>
+    </div>
+    </nav>
+
+    <div class="container-fluid bg-3 text-center bg-primary snow"> 
+        <hr>
+        <br>
+        <br>
+        <h1>Santa's Workshop</h1><br>
+        <div class="row">
+            <div class="col-sm-12">
+            <h2>Where Santa spends most of his time, Where the magic happens!</h2>
+            </div> 
+            <br>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <img src="https://media.licdn.com/dms/image/D4E12AQHbYLs1sDSvvg/article-cover_image-shrink_720_1280/0/1703016891838?e=2147483647&v=beta&t=7-kG0rO8RAcURDbaqKW07er3I1QpNb9sekGAhtKgF7A" class="img-responsive center-block" style=width:100% alt="Symbol of the house of repersentives">
+            </div>
+        </div>
+        <br><hr>
+        </div>
+        <br>
+        
+        <div class="container-fluid bg-3 text-center">   
+        <h1>Santa's Helpers</h1><br>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img src="https://t3.ftcdn.net/jpg/09/67/32/86/360_F_967328685_SAbrljtA856pxkFNJfI0mdpS1NDH4JOP.jpg" class="img-responsive center-block" style=width:25% alt="Graphic of a bill">
+                </div>
+            </div>
+
+            <div class="row">
+            <div class="col-sm-12">
+                <h2>Santa's Helpers are the Elves!</h2>
+            </div>
+            </div>
+            <br>
+            <br>
+
+        <div class="row">
+            <div class="col-sm-3">
+            <h4>Builds the Toys</h4>
+            <img scr="">
+            </div>
+            <div class="col-sm-3"> 
+            <h4> Wraps the Toys</h4>
+            <img scr="">
+            </div>
+            <div class="col-sm-3"> 
+            <h4>Take care of the Reindeer</h4>
+            </div>
+            <div class="col-sm-3">
+            <h4>Bake Christmas Cookies</h4>
+            </div>
+        </div>
+        </div><br><br>
+
+        
+        <div class="container-fluid bg-3 text-center bg-primary snow">  
+        <hr>
+        <h3>Naughty or Nice</h3><br>
+        <div class="row">
+            <div class="col-sm-3">
+            <h3>Every year Santa keeps a eye on every kid, watching their every action. Santa and his elves keep track of every good and bad action each kid takes. Santa then updates the Naughty and Nice list to decide who gets the best presents on Christmas. Those kids on the Naughty list will only recieve coal on the day of Christmas. Those kids on the Nice list will recieve a gift, specially crafted by Santa's helpers, from thier Chirstmas wishlist.</h2>
+            <h4></h4>
+            </div>
+            <div class="col-sm-1"> </div>
+            <div class="col-sm-3" id="paper"> 
+            <h2>The Naughty List</h2>
+            <h3>John</h3>
+            <h3>Ava</h3>
+            <h3>May</h3>
+            <h3>Adam</h3>
+            <h3 id="naughtyIn"></h3>
+            <br>
+            </div>
+            <div class="col-sm-1"> </div>
+            <div class="col-sm-3 " id="paper"> 
+            <h2>The Nice List</h2>
+            <h3>Bella</h3>
+            <h3>Chloe</h3>
+            <h3>Grace</h3>
+            <h3>Bob</h3>
+            <h3 id="niceIn"></h3>
+            <br>
+            </div>
+            <div class="col-sm-1"> </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3">
+            
+            </div>
+            <div class="col-sm-9">
+            
+            <button onclick="myFunction()">Add Your Name To A List</button>
+        
+            <script>
+            function myFunction() {
+                alert("Put your name on a list!");
+                var choice = prompt("Naughty or Nice?").toLowerCase();
+                var naughtyIn = document.getElementById("naughtyIn");
+                var niceIn = document.getElementById("niceIn");
+                if(choice=="naughty"){
+                var name = prompt("What is your name");
+                naughtyIn.innerhtml= name;
+                }
+                else if(choice=="nice"){
+                var name = prompt("What is your name");
+                niceIn.innerhtml= name;
+                }
+                else{
+                var choice = prompt("type [naughty] or [nice]").toLowerCase();
+                }
+            }
+            </script>
+            </div>
+        </div>
+        <br><br> 
+        </div>
+        <footer class="container-fluid text-center">
+            <a href="workshop.html">Return to Top</a>
+        </footer>
+    </body>
+</html>
