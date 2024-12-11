@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <style>
+  
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color:  #2b4e27;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color:#2b4e27;
+      padding: 25px;
+    }
+    
+    body{
+        padding-top:50px;
+        background-image: url(/);
+    }
+
+    .jumbotron{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtcnLmExfygNZ58TmQcLOQLJ-edLL5Ad8TuwADmpEHZtFlgv2NKPIvGZKj1F13IubVy4&usqp=CAU);
+        background-size: contain;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Welcome</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="north.html">The North Pole</a></li>
+        <li><a href="santa.html">Santa Claus</a></li>
+        <li><a href="traditions.html">Traditions</a></li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 class="font-weight-bold">Christmas</h1>      
+    <p>Take a Deep Dive into the All Things Christmas!</p>
+  </div>
+</div>
+  
+<div class="container-fluid bg-3 text-center">    
+  <h2 class="font-weight-bold">Elements of Christmas</h2>
+  <br><hr><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>The North Pole</h3>
+      <a href="north.html" ><img src="https://www.hsdbackdrops.com/cdn/shop/files/CHS44410x8christmasnorthpolebackdrop_1800x1800.jpg?v=1686936698" class="img-responsive" style="width:100%" alt="image of north pole"></a>
+    </div>
+    <div class="col-sm-4"> 
+      <h3>Santa Claus</h3>
+      <a href="santa.html" ><img src="https://i.ebayimg.com/images/g/p8cAAOSwaAllRk98/s-l1200.jpg" class="img-responsive" style="width:100%" alt="image of santa"></a>
+    </div>
+    <div class="col-sm-4"> 
+      <h3>Traditions</h3>
+      <a href="traditions.html" ><img src="https://images.thdstatic.com/productImages/6ee98b88-f612-48b9-8cdb-a3eb122e40f4/svn/red-trademark-fine-art-art-photography-ali65853-c1818gg-64_300.jpg" class="img-responsive" style="width:100%" alt="image of christmas"></a>
+    </div>
+    
+  </div>
+</div><br>
+
+
+<footer class="container-fluid text-center">
+ 
+</footer>
+
+</body>
+</html>
