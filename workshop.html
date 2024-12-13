@@ -26,7 +26,7 @@
         }
 
         .jumbotron{
-        background-color: #b6c8d4;
+        background-color: hsl(204, 91%, 26%);
         }
     
         .snow{
@@ -102,17 +102,36 @@
         <div class="row">
             <div class="col-sm-3">
             <h4>Builds the Toys</h4>
-            <img scr="">
             </div>
+
             <div class="col-sm-3"> 
             <h4> Wraps the Toys</h4>
-            <img scr="">
             </div>
+
             <div class="col-sm-3"> 
             <h4>Take care of the Reindeer</h4>
             </div>
+
             <div class="col-sm-3">
             <h4>Bake Christmas Cookies</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <img src="https://media.istockphoto.com/id/156312129/vector/santas-sack.jpg?s=612x612&w=0&k=20&c=BUq2eexlVX4Q3Wo6IsJYYqFC2roZGU-gXlJp-6eNz5g=" class="img-responsive center-block" style=width:95%;height:300px alt="image of toys">
+            </div>
+
+            <div class="col-sm-3">
+                <img src="https://img.freepik.com/premium-photo/drawing-christmas-tree-with-bunch-presents_577115-145415.jpg" class="img-responsive center-block" style=width:95%;height:300px alt="image of wrapped toys">
+            </div>
+
+            <div class="col-sm-3">
+                <img src="https://i.ebayimg.com/images/g/0KkAAOSwnDZUJYGm/s-l1200.jpg" class="img-responsive center-block" style=width:95%;height:300px alt="image of Reindeers">
+            </div>
+
+            <div class="col-sm-3">
+                <img src="https://media.istockphoto.com/id/156312129/vector/santas-sack.jpg?s=612x612&w=0&k=20&c=BUq2eexlVX4Q3Wo6IsJYYqFC2roZGU-gXlJp-6eNz5g=" class="img-responsive center-block" style=width:95%;height:300px alt="image of cookies">
             </div>
         </div>
         </div><br><br>
@@ -159,20 +178,27 @@
         
             <script>
             function myFunction() {
+                
                 alert("Put your name on a list!");
                 var choice = prompt("Naughty or Nice?").toLowerCase();
                 var naughtyIn = document.getElementById("naughtyIn");
                 var niceIn = document.getElementById("niceIn");
-                if(choice=="naughty"){
-                var name = prompt("What is your name");
-                naughtyIn.innerhtml= name;
+                if(choice == "naughty"){
+                    while(num1)
+                    var name = prompt("What is your name");
+                    if(name){
+                        naughtyIn.innerHTML += name +"<br>"+"<br>";
+                    }
+                   
                 }
                 else if(choice=="nice"){
-                var name = prompt("What is your name");
-                niceIn.innerhtml= name;
+                    var name = prompt("What is your name");
+                    if(name){
+                    niceIn.innerHTML += name + "<br>" +"<br>";
+                    }
                 }
                 else{
-                var choice = prompt("type [naughty] or [nice]").toLowerCase();
+                    alert("please try again and type [naughty] or [nice]");
                 }
             }
             </script>
