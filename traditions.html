@@ -12,22 +12,79 @@
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+      background-color: darkgreen;
     }
     
+    .navbar-nav > li > a:hover, .navbar-nav > .active > a{
+        background-color: rgb(3, 54, 3) !important;
+    }
+
+    .navbar a, .navbar-brand{
+        color:white !important;
+    }
+
+    .navbar-nav .dropdown-menu a:hover{
+        background-color:darkgreen;
+        color:white !important;
+    }
+
+    .navbar .dropdown-menu a{
+        color: black !important;
+        background-color:white;
+    }
+
     /* Add a gray background color and some padding to the footer */
     footer {
       background-color: #f2f2f2;
       padding: 25px;
+      background-color: darkgreen;
     }
     
     body{
         padding-top:50px;
     }
+
+    .cane{
+        background-color: crimson;
+        color: hsl(0, 0%, 100%);
+    }
+
+    .tree{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7f4MLRPnuEWQwuPL-rFI5ZNEICbt4mXkoFQ&s");
+        background: size width 100px;
+    }
+
+    .gift{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE26EcFsjyb3SYM-pl78e0sL5SbZV4s3jnBA&s");
+        background: size height 100px;
+    }
+
+    .whitet{
+        color:hsl(0, 0%, 100%)
+    }
+
+    .treeI{
+        width:50%;
+        transition: background-image 0.1s ease-in-out;
+    }
+
+    .treeI:hover{
+        content: url("https://png.pngtree.com/png-clipart/20220923/ourmid/pngtree-3d-christmas-tree-decoration-png-image_6211039.png");
+    }
+
+    .present{
+        width:50%;
+        transition: background-image 0.1s ease-in-out;
+    }
+
+    .present:hover{
+        content: url("https://png.pngtree.com/png-clipart/20211024/original/pngtree-christmas-gift-red-3d-package-png-image_6861061.png");
+    }
   </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,13 +92,20 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#">The North Pole</a>
+            <a class="navbar-brand" href="#">Christmas Traditions</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li ><a href="index.html">Home</a></li>
-              <li><a href="north.html">The North Pole</a></li>
-              <li><a href="santa.html">Santa Claus</a></li>
+              <li class="nav-item dropdown">
+                <a href="north.html" class="nav-link dropdown-toggle" id="property-type-links" role="button"  data-toggle="dropdown">The North Pole <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="north.html" class="dropdown-item">Visit the North Pole</a></li>
+                    <li><a href="santa.html" class="dropdown-item">Visit Santa</a></li>
+                    <li><a href="workshop.html" class="dropdown-item">Visit Santa's Workshop</a></li>
+
+                </ul>
+            </li>
               <li><a href="traditions.html">Traditions</a></li>
             </ul>
             
@@ -49,91 +113,73 @@
         </div>
       </nav>
 
-<div class="jumbotron">
+<div class="jumbotron gift whitet">
   <div class="container text-center">
-    <h1>The Senate</h1>      
-    
+    <h1>Christmas Traditions</h1>      
   </div>
 </div>
   
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="font-weight-bold">What Is The Senate?</h3>
+<div class="container-fluid bg-3 text-center tree">    
+  <h2 class="font-weight-bold">The Christmas Tree</h2>
   <br><br>
   <div class="row">
-        <div class="col-sm-12">
-            <img src="https://www.congressionalinstitute.org/wp-content/uploads/2021/02/600px-Seal_of_the_United_States_House_of_Representatives.svg_.png" class="img-responsive center-block" style=width:25% alt="Symbol of the senate">
+        <div class="col-sm-6">
+            <p>Hover to bring to life</p>
+            <img src="https://png.pngtree.com/png-clipart/20231001/original/pngtree-christmas-watercolor-pine-tree-png-image_13027360.png" class="img-responsive center-block treeI" style=width:50% alt="Symbol of the senate">
+            <!-- https://t3.ftcdn.net/jpg/09/33/76/20/360_F_933762081_NYlMqrzQURYhnkxVXcwlf384BBEDKOeF.jpg -->
+        </div>
+
+        <div class="col-sm-6">
+             <h3>The Christmas Tree is a tradition that many American families participate in.</h3>
+             <h3>According to Britannica, originating from Germany, "families set up a paradise tree in their homes on December 24, the religious feast day of Adam and Eve."</h3>
+             <h3>The modern christmas tree is a universal symbol that carries both religious and secular meanings.</h3>
         </div>
     </div>
     <br><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <h4>- The Senate is comprised of 100 members</h4>
-    </div>
-    <div class="col-sm-4"> 
-      <h4>- Each state has two senators to equally distribute the memebers</h4>
-    </div>
-    <div class="col-sm-4"> 
-      <h4>- The Senate is meant to represent the calm/comparative people</h4>
-    </div>
-  </div>
-</div><br> 
+    <br> 
+</div>
 
-<div class="container-fluid bg-3 text-center bg-primary">  
+<div class="container-fluid bg-3 text-center gift whitet">  
 <hr>
 <br>
-<h3>Powers of the Senate</h3><br>
+<h3>Christmas Gifts</h3><br>
   <div class="row">
     <div class="col-sm-6">
-      <h4>- Confirm presidential nominations</h4>
+      <!--<img src="https://png.pngtree.com/png-clipart/20211024/original/pngtree-christmas-gift-red-3d-package-png-image_6861061.png" class="img-responsive center-block" style=width:50% alt="Symbol of the senate">-->
+      <h4 class="present">- Confirm presidential nominations</h4>
     </div>
     <div class="col-sm-6"> 
+        https://png.pngtree.com/png-clipart/20230430/original/pngtree-red-christmas-gift-box-with-snowflakes-png-image_9128790.png
       <h4>- ratify treaties</h4></h4>
     </div>
   </div>
   <br><br><hr>
 </div>
 
-<div class="container-fluid bg-3 text-center">   
-<h3>The Process of Passing a Bill</h3><br>
+<div class="container-fluid bg-3 text-center tree">   
+<h3>Christmas Cookies</h3><br>
 <div class="row">
-    <div class="col-sm-12">
-        <img src="https://capclass.virginiageneralassembly.gov/images/HowABill/Middle/HABsigna.jpg" class="img-responsive center-block" style=width:25% alt="Graphic of hand signing a bill">
+    <div class="col-sm-6">
+        <h3>It is common tradition in many American households to make cookies during the christmas cookies</h3>        
     </div>
-</div>
-  <div class="row">
-    <div class="col-sm-3">
-      <h4>Voted on in a subcommittee -></h4>
-      <h5>revised/marked up</h5>
-    </div>
-    <div class="col-sm-3"> 
-      <h4>Voted on in a Standing committee -></h4>
-      <h5>revised/marked up</h5>
-    </div>
-    <div class="col-sm-3"> 
-      <h4>Voted on by the entire Senate-></h4>
-    </div>
-    <div class="col-sm-3">
-      <h4>Sent to the president-></h4>
-    </div>
-  </div>
-</div><br><br> 
 
-<div class="container-fluid bg-3 text-center bg-primary"> 
-<hr>
-<h3>Senate Leadership</h3><br>
-  <div class="row">
     <div class="col-sm-3">
-      <h4>1 - President of Senate (Vice President)</h4>
+        <img src="https://png.pngtree.com/png-clipart/20231003/original/pngtree-christmas-cookies-snowman-png-image_13078761.png" class="img-responsive center-block" style=width:300px alt="image of snowman cookie">
     </div>
-    <div class="col-sm-3"> 
-      <h4>2 - President Pro Tempore</h4>
-    </div>
-    <div class="col-sm-3"> 
-      <h4>3 - Majority/Minority Leaders</h4>
-    </div>
+
     <div class="col-sm-3">
-      <h4>4 - Majority/Minority Whips</h4>
+        <img src="https://png.pngtree.com/png-vector/20240910/ourmid/pngtree-smiling-gingerbread-man-clipart-illustration-png-image_13806506.png" class="img-responsive center-block" style=width:300px alt="image of gingerbread cookie">
     </div>
-  </div>
-  <br><br>
+
 </div>
+  <br><br> 
+</div>
+
+<div class="container-fluid bg-3 text-center gift whitet"> 
+  <br><hr><br>
+</div>
+<footer class="container-fluid text-center">
+    <a href="traditions.html">Return to Top</a>
+</footer>
+</body>
+</html>

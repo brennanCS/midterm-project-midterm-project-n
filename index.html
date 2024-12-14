@@ -15,6 +15,24 @@
       border-radius: 0;
       background-color:  #2b4e27;
     }
+
+    .navbar-nav > li > a:hover, .navbar-nav > .active > a{
+            background-color: #183015 !important;
+        }
+
+        .navbar a, .navbar-brand{
+            color:#ffffff !important;
+        }
+
+        .navbar-nav .dropdown-menu a:hover{
+            background-color:#183015;
+            color:#ffff !important;
+        }
+
+        .navbar .dropdown-menu a{
+            color: #593e23 !important;
+            background-color:hsl(0, 0%, 100%);
+        }
     
     /* Add a gray background color and some padding to the footer */
     footer {
@@ -24,13 +42,19 @@
     
     body{
         padding-top:50px;
-        background-color: #abb2b9;
+        background-color: #9e8974;
     }
 
     .jumbotron{
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtcnLmExfygNZ58TmQcLOQLJ-edLL5Ad8TuwADmpEHZtFlgv2NKPIvGZKj1F13IubVy4&usqp=CAU);
+        background-image: url(https://img.goodfon.com/wallpaper/big/b/a5/ukrasheniia-shary-novyi-god-rozhdestvo-new-year-happy-chri-7.webp);
         background-size: contain;
     }
+
+    .white{
+      color:white;
+    }
+    
+    
   </style>
 </head>
 <body>
@@ -47,9 +71,16 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="north.html">The North Pole</a></li>
-        <li><a href="santa.html">Santa Claus</a></li>
+        <li ><a href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a href="north.html" class="nav-link dropdown-toggle" id="property-type-links" role="button"  data-toggle="dropdown">The North Pole <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a href="north.html" class="dropdown-item">Visit the North Pole</a></li>
+              <li><a href="santa.html" class="dropdown-item">Visit Santa</a></li>
+              <li><a href="workshop.html" class="dropdown-item">Visit Santa's Workshop</a></li>
+
+          </ul>
+      </li>
         <li><a href="traditions.html">Traditions</a></li>
       </ul>
       
@@ -57,10 +88,10 @@
   </div>
 </nav>
 
-<div class="jumbotron">
+<div class="jumbotron white">
   <div class="container text-center">
     <h1 class="font-weight-bold">Christmas</h1>      
-    <p>Take a Deep Dive into the All Things Christmas!</p>
+    <h3>Take a Deep Dive into the All Things Christmas!</h3>
   </div>
 </div>
   
@@ -86,7 +117,7 @@
 
 
 <footer class="container-fluid text-center">
- 
+  <a href="index.html">Return to Top</a>
 </footer>
 
 </body>

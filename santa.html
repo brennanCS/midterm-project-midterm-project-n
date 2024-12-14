@@ -12,22 +12,51 @@
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+      background-color: #ffff;
+      color: crimson;
+    }
+
+    .navbar-nav > li > a:hover, .navbar-nav > .active > a{
+        background-color: #dee0e3 !important;
+    }
+
+    .navbar a, .navbar-brand{
+        color:crimson !important;
+    }
+
+    .navbar-nav .dropdown-menu a:hover{
+        background-color:#dee0e3;
+        color:crimson !important;
+    }
+
+    .navbar .dropdown-menu a{
+        color: crimson !important;
+        background-color:white;
     }
     
     /* Add a gray background color and some padding to the footer */
     footer {
-      background-color: #f2f2f2;
+      background-color: hsl(0, 0%, 100%);
       padding: 25px;
     }
     
     body{
         padding-top:50px;
     }
+    .cane{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE26EcFsjyb3SYM-pl78e0sL5SbZV4s3jnBA&s");
+        color: hsl(0, 0%, 100%);
+    }
+    .candy{
+        color: crimson!important;
+    }
+
+    
   </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top navbar-light">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -35,13 +64,19 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#">The North Pole</a>
+            <a class="navbar-brand" href="#">Santa</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li ><a href="index.html">Home</a></li>
-              <li><a href="north.html">The North Pole</a></li>
-              <li><a href="santa.html">Santa Claus</a></li>
+              <li class="nav-item dropdown">
+                <a href="north.html" class="nav-link dropdown-toggle" id="property-type-links" role="button"  data-toggle="dropdown">The North Pole <span class="caret"></span></a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a href="north.html" class="dropdown-item">Visit the North Pole</a></li>
+                    <li class="active"><a href="santa.html" class="dropdown-item">Visit Santa</a></li>
+                    <li><a href="workshop.html" class="dropdown-item">Visit Santa's Workshop</a></li>
+                </ul>
+            </li>
               <li><a href="traditions.html">Traditions</a></li>
             </ul>
             
@@ -49,39 +84,39 @@
         </div>
       </nav>
 
-<div class="jumbotron">
+<div class="jumbotron cane">
   <div class="container text-center">
-    <h1>The Senate</h1>      
+    <h1 >Santa Claus</h1>      
     
   </div>
 </div>
   
 <div class="container-fluid bg-3 text-center">    
-  <h3 class="font-weight-bold">What Is The Senate?</h3>
+  <h3 class="font-weight-bold">Who is Santa Claus</h3>
   <br><br>
   <div class="row">
         <div class="col-sm-12">
-            <img src="https://www.congressionalinstitute.org/wp-content/uploads/2021/02/600px-Seal_of_the_United_States_House_of_Representatives.svg_.png" class="img-responsive center-block" style=width:25% alt="Symbol of the senate">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uX4bie0bZ3H-f5vfJ6ACey9nSTE0k9sEfA&s" class="img-responsive center-block" style=width:25% alt="image of santa">
         </div>
     </div>
-    <br><br>
+   
   <div class="row">
     <div class="col-sm-4">
-      <h4>- The Senate is comprised of 100 members</h4>
+      <h4>- Santa Claus's full name is Saint Nicholas</h4>
+    </div> 
+    <div class="col-sm-4"> 
+      <h4>- Based on a true person, Santa has given away his inherited wealth to help the poor and sick</h4>
     </div>
     <div class="col-sm-4"> 
-      <h4>- Each state has two senators to equally distribute the memebers</h4>
-    </div>
-    <div class="col-sm-4"> 
-      <h4>- The Senate is meant to represent the calm/comparative people</h4>
+      <h4>-The image of Santa Claus in North America was influenced by Dutch immigrants</h4>
     </div>
   </div>
 </div><br> 
 
-<div class="container-fluid bg-3 text-center bg-primary">  
+<div class="container-fluid bg-3 text-center cane">  
 <hr>
 <br>
-<h3>Powers of the Senate</h3><br>
+<h3>Santas Origin Story</h3><br>
   <div class="row">
     <div class="col-sm-6">
       <h4>- Confirm presidential nominations</h4>
@@ -94,46 +129,46 @@
 </div>
 
 <div class="container-fluid bg-3 text-center">   
-<h3>The Process of Passing a Bill</h3><br>
+<h3>Feed Santa Cookies</h3><br>
+<p>Click on the cookies to make Santa's belly full</p>
 <div class="row">
-    <div class="col-sm-12">
-        <img src="https://capclass.virginiageneralassembly.gov/images/HowABill/Middle/HABsigna.jpg" class="img-responsive center-block" style=width:25% alt="Graphic of hand signing a bill">
+    <div class="col-sm-6 santa">
+        <img src="https://png.pngtree.com/png-vector/20241011/ourmid/pngtree-colorful-santa-claus-clipart-for-digital-use-png-image_14039924.png" class="img-responsive center-block" style=width:300px alt="image of santa">
+    </div>
+    <br><br><br>
+    <div class="col-sm-2 cookie">
+        <img src="https://png.pngtree.com/png-vector/20241114/ourmid/pngtree-christmas-gingerbread-cookies-clipart-in-transparent-background-png-image_14421249.png" class="img-responsive center-block" style=width:200px; alt="image of cookies">
+    </div>
+    <div class="col-sm-2 cookie">
+        <img src="https://png.pngtree.com/png-vector/20241114/ourmid/pngtree-christmas-gingerbread-cookies-clipart-png-image_14421252.png" class="img-responsive center-block" style=width:200px alt="image of cookies">
+    </div>
+    <div class="col-sm-2 cookie">
+        <img src="https://png.pngtree.com/png-vector/20241018/ourmid/pngtree-christmas-tree-cookie-clipart-png-image_14105693.png" class="img-responsive center-block" style=width:200px alt="image of cookies">
     </div>
 </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <h4>Voted on in a subcommittee -></h4>
-      <h5>revised/marked up</h5>
-    </div>
-    <div class="col-sm-3"> 
-      <h4>Voted on in a Standing committee -></h4>
-      <h5>revised/marked up</h5>
-    </div>
-    <div class="col-sm-3"> 
-      <h4>Voted on by the entire Senate-></h4>
-    </div>
-    <div class="col-sm-3">
-      <h4>Sent to the president-></h4>
-    </div>
-  </div>
+
+<script>
+    var clicks =0;
+    let scale = 1;
+    $(".cookie").click(function(){
+        if(clicks <10){
+            scale+=0.05;
+            $(".santa img").css("transform", "scale(" + scale + ")");
+            clicks++;
+        }
+        else{
+            alert("Santa is too full! No more cookies.")
+        }
+    });
+</script>
+
+</div>
+
 </div><br><br> 
 
-<div class="container-fluid bg-3 text-center bg-primary"> 
-<hr>
-<h3>Senate Leadership</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <h4>1 - President of Senate (Vice President)</h4>
-    </div>
-    <div class="col-sm-3"> 
-      <h4>2 - President Pro Tempore</h4>
-    </div>
-    <div class="col-sm-3"> 
-      <h4>3 - Majority/Minority Leaders</h4>
-    </div>
-    <div class="col-sm-3">
-      <h4>4 - Majority/Minority Whips</h4>
-    </div>
-  </div>
-  <br><br>
-</div>
+
+<footer class="container-fluid text-center cane">
+    <a href="santa.html">Return to Top</a>
+</footer>
+</body>
+</html>
