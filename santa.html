@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Santa Claus</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* change colors of navbar to fit theme */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTc-77oruQ0xGm_87gOUEl4L074aQ8cvl6WA&s);
       background-color: #ffff;
       color: crimson;
     }
@@ -21,6 +22,7 @@
     }
 
     .navbar a, .navbar-brand{
+      background-color: #ffff;
         color:crimson !important;
     }
 
@@ -34,12 +36,17 @@
         background-color:white;
     }
     
-    /* Add a gray background color and some padding to the footer */
+     /* set background and text color of footer */
     footer {
       background-color: hsl(0, 0%, 100%);
       padding: 25px;
     }
+
+    footer a{
+      color:white !important;
+    }
     
+     /* set body and jumbotron background and text colors */
     body{
         padding-top:50px;
     }
@@ -47,15 +54,12 @@
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE26EcFsjyb3SYM-pl78e0sL5SbZV4s3jnBA&s");
         color: hsl(0, 0%, 100%);
     }
-    .candy{
-        color: crimson!important;
-    }
-
     
   </style>
 </head>
 <body>
-
+    <!-- Set navbar links and labels -->
+    <!-- Set navbar as a sticky navbar -->
     <nav class="navbar navbar-fixed-top navbar-light">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -64,7 +68,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>                        
             </button>
-            <a class="navbar-brand" href="#">Santa</a>
+            <a class="navbar-brand" href="#">Santa Claus</a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -84,91 +88,99 @@
         </div>
       </nav>
 
-<div class="jumbotron cane">
-  <div class="container text-center">
-    <h1 >Santa Claus</h1>      
-    
-  </div>
-</div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="font-weight-bold">Who is Santa Claus</h3>
-  <br><br>
-  <div class="row">
-        <div class="col-sm-12">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uX4bie0bZ3H-f5vfJ6ACey9nSTE0k9sEfA&s" class="img-responsive center-block" style=width:25% alt="image of santa">
+    <!-- label of webpage content -->
+    <div class="jumbotron cane">
+      <div class="container text-center">
+        <h1 >Santa Claus</h1>      
+      </div>
+    </div>
+      
+    <!-- Santa Claus description -->
+    <div class="container-fluid bg-3 text-center">    
+      <h3 class="font-weight-bold">Who is Santa Claus</h3>
+      <br><br>
+      <!-- row of image of Santa -->
+      <div class="row">
+            <div class="col-sm-12">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1uX4bie0bZ3H-f5vfJ6ACey9nSTE0k9sEfA&s" class="img-responsive center-block" style=width:25% alt="image of santa">
+            </div>
         </div>
-    </div>
-   
-  <div class="row">
-    <div class="col-sm-4">
-      <h4>- Santa Claus's full name is Saint Nicholas</h4>
-    </div> 
-    <div class="col-sm-4"> 
-      <h4>- Based on a true person, Santa has given away his inherited wealth to help the poor and sick</h4>
-    </div>
-    <div class="col-sm-4"> 
-      <h4>-The image of Santa Claus in North America was influenced by Dutch immigrants</h4>
-    </div>
-  </div>
-</div><br> 
+      
+      <!-- Row of background info on Santa-->
+      <div class="row">
+        <div class="col-sm-4">
+          <h4>- Santa Claus's full name is Saint Nicholas</h4>
+        </div> 
+        <div class="col-sm-4"> 
+          <h4>- Based on a true person, Santa has given away his inherited wealth to help the poor and sick</h4>
+        </div>
+        <div class="col-sm-4"> 
+          <h4>-The image of Santa Claus in North America was influenced by Dutch immigrants</h4>
+        </div>
+      </div>
+    </div><br> 
 
-<div class="container-fluid bg-3 text-center cane">  
-<hr>
-<br>
-<h3>Santas Origin Story</h3><br>
-  <div class="row">
-    <div class="col-sm-6">
-      <h4>- Confirm presidential nominations</h4>
+    <!-- Santa Claus's origin story section -->
+    <div class="container-fluid bg-3 text-center cane">  
+    <hr>
+    <br>
+    <h3>Santas Origin Story</h3><br>
+      <div class="row">
+        <div class="col-sm-6">
+          <h4>The image of Santa Claus originates from the legend of St. Nicholas, a 4th-century Christian bishop known for his generosity/kindness</h4>
+        </div>
+        <div class="col-sm-6"> 
+          <h4>St. Nicholas was said to give away all of his inheritance to help the poor and sick</h4></h4>
+        </div>
+      </div>
+      <br><br><hr>
     </div>
-    <div class="col-sm-6"> 
-      <h4>- ratify treaties</h4></h4>
+
+    <!-- images of Santa and cookies-->
+    <div class="container-fluid bg-3 text-center">   
+    <h3>Feed Santa Cookies</h3><br>
+    <p>Click on the cookies to make Santa's belly full</p>
+    <div class="row">
+        <div class="col-sm-6 santa">
+            <img src="https://png.pngtree.com/png-vector/20241011/ourmid/pngtree-colorful-santa-claus-clipart-for-digital-use-png-image_14039924.png" class="img-responsive center-block" style=width:300px alt="image of santa">
+        </div>
+        <br><br><br>
+        <div class="col-sm-2 cookie">
+            <img src="https://png.pngtree.com/png-vector/20241114/ourmid/pngtree-christmas-gingerbread-cookies-clipart-in-transparent-background-png-image_14421249.png" class="img-responsive center-block" style=width:200px; alt="image of cookies">
+        </div>
+        
+        <div class="col-sm-2 cookie">
+            <img src="https://png.pngtree.com/png-vector/20241018/ourmid/pngtree-christmas-tree-cookie-clipart-png-image_14105693.png" class="img-responsive center-block" style=width:200px alt="image of cookies">
+        </div>
+
+        <div class="col-sm-2 cookie">
+          <img src="https://png.pngtree.com/png-vector/20241114/ourmid/pngtree-christmas-gingerbread-cookies-clipart-png-image_14421252.png" class="img-responsive center-block" style=width:200px alt="image of cookies">
+      </div>
     </div>
-  </div>
-  <br><br><hr>
-</div>
 
-<div class="container-fluid bg-3 text-center">   
-<h3>Feed Santa Cookies</h3><br>
-<p>Click on the cookies to make Santa's belly full</p>
-<div class="row">
-    <div class="col-sm-6 santa">
-        <img src="https://png.pngtree.com/png-vector/20241011/ourmid/pngtree-colorful-santa-claus-clipart-for-digital-use-png-image_14039924.png" class="img-responsive center-block" style=width:300px alt="image of santa">
+    <!-- JavaScript to make Santa image bigger per click of cookies -->
+    <script>
+        var clicks =0;
+        let scale = 1;
+        $(".cookie").click(function(){
+            if(clicks <10){
+                scale+=0.05;
+                $(".santa img").css("transform", "scale(" + scale + ")");
+                clicks++;
+            }
+            else{
+                alert("Santa is too full! No more cookies.")
+            }
+        });
+    </script>
+
     </div>
-    <br><br><br>
-    <div class="col-sm-2 cookie">
-        <img src="https://png.pngtree.com/png-vector/20241114/ourmid/pngtree-christmas-gingerbread-cookies-clipart-in-transparent-background-png-image_14421249.png" class="img-responsive center-block" style=width:200px; alt="image of cookies">
-    </div>
-    <div class="col-sm-2 cookie">
-        <img src="https://png.pngtree.com/png-vector/20241114/ourmid/pngtree-christmas-gingerbread-cookies-clipart-png-image_14421252.png" class="img-responsive center-block" style=width:200px alt="image of cookies">
-    </div>
-    <div class="col-sm-2 cookie">
-        <img src="https://png.pngtree.com/png-vector/20241018/ourmid/pngtree-christmas-tree-cookie-clipart-png-image_14105693.png" class="img-responsive center-block" style=width:200px alt="image of cookies">
-    </div>
-</div>
 
-<script>
-    var clicks =0;
-    let scale = 1;
-    $(".cookie").click(function(){
-        if(clicks <10){
-            scale+=0.05;
-            $(".santa img").css("transform", "scale(" + scale + ")");
-            clicks++;
-        }
-        else{
-            alert("Santa is too full! No more cookies.")
-        }
-    });
-</script>
+    </div><br><br> 
 
-</div>
-
-</div><br><br> 
-
-
-<footer class="container-fluid text-center cane">
-    <a href="santa.html">Return to Top</a>
-</footer>
+    <!-- Footer section -->
+    <footer class="container-fluid text-center cane">
+        <a href="santa.html">Return to Top</a>
+    </footer>
 </body>
 </html>

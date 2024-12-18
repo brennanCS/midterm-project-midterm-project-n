@@ -1,13 +1,13 @@
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>The North Pole</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* change colors of navbar to fit theme */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -33,13 +33,18 @@
         background-color:white;
     }
    
-    /* Add a gray background color and some padding to the footer */
+    /* set background and text color of footer */
     footer {
       background-color: #5984b7;
       padding: 25px;
+    }
+
+    footer a{
       color:white !important;
     }
     
+
+     /* set body and jumbotron background and text colors */
     body{
         padding-top:50px;
         background-color: #e7ebf7;
@@ -68,86 +73,86 @@
     }
   </style>
 </head>
-<body>
-
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#">The North Pole</a>
+  <body>
+    <!-- Set navbar links and labels -->
+    <!-- Set navbar as a sticky navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">The North Pole</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a href="north.html" class="nav-link dropdown-toggle" id="property-type-links" role="button"  data-toggle="dropdown">The North Pole <span class="caret"></span></a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li> <a href="north.html" class="dropdown-item">Visit the North Pole</a></li>
+                  <li><a href="santa.html" class="dropdown-item">Visit Santa</a></li>
+                  <li><a href="workshop.html" class="dropdown-item">Visit Santa's Workshop</a></li>
+              </ul>
+          </li>
+            <li><a href="traditions.html">Traditions</a></li>
+          </ul>
+          
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li ><a href="index.html">Home</a></li>
-          <li class="nav-item dropdown">
-            <a href="north.html" class="nav-link dropdown-toggle" id="property-type-links" role="button"  data-toggle="dropdown">The North Pole <span class="caret"></span></a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li> <a href="north.html" class="dropdown-item">Visit the North Pole</a></li>
-                <li><a href="santa.html" class="dropdown-item">Visit Santa</a></li>
-                <li><a href="workshop.html" class="dropdown-item">Visit Santa's Workshop</a></li>
-            </ul>
-        </li>
-          <li><a href="traditions.html">Traditions</a></li>
-        </ul>
-        
+    </nav>
+
+    <!-- label of webpage content -->
+    <div class="jumbotron white">
+      <div class="container text-center">
+        <h1 class="white">The North Pole</h1>      
+        <h2>Santa's Home Town</h2>
       </div>
     </div>
-  </nav>
 
-<div class="jumbotron white">
-  <div class="container text-center">
-    <h1 class="white">The North Pole</h1>      
-    <h2>Santa's Home Town</h2>
-  </div>
-</div>
-  
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-12">
-      <img src="https://media.bradfordexchange.com/image/upload/b_auto,c_pad,dpr_2.0,f_auto,h_375,q_auto,w_375/e_sharpen:200/c_pad,h_375,w_375/v1/subplan-and-parent/917914_alt2?pgw=1" class="img-responsive center-block" style=width:100% alt="image of North Pole">
+    <!-- image of showing the North Pole -->
+    <div class="container-fluid bg-3 text-center">    
+      <div class="row">
+        <div class="col-sm-12">
+          <img src="https://media.bradfordexchange.com/image/upload/b_auto,c_pad,dpr_2.0,f_auto,h_375,q_auto,w_375/e_sharpen:200/c_pad,h_375,w_375/v1/subplan-and-parent/917914_alt2?pgw=1" class="img-responsive center-block" style=width:100% alt="image of North Pole">
+        </div>
+      </div>
+
     </div>
-  </div>
+    <br><br>
 
-</div>
-<br>
-<br>
+    <!-- Button to go to Santa webpage -->
+    <div class="container-fluid bg-3 text-center bg-primary snow"> 
+    <hr>
+    <br>
+    <br>
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Santa</h1><br>
+          <a href="santa.html">
+            <button class="big-btn">Click here to go see Santa!</button>
+          </a>
+        </div>
 
+      <!-- Button to go to Santa's workshop webpage -->
+      <div class="row">
+        <div class="col-sm-6">
+          <h1>Santa's Workshop</h1><br>
+          <a href="workshop.html">
+            <button class="big-btn">Click here to go inside Santa's Workshop</button>
+          </a>
+        </div>
+      </div>
 
-<div class="container-fluid bg-3 text-center bg-primary snow"> 
-<hr>
-<br>
-<br>
-  <div class="row">
-    <div class="col-sm-6">
-      <h1>Santa</h1><br>
-      <a href="santa.html">
-        <button class="big-btn">Click here to go see Santa!</button>
-      </a>
+      <br><hr><br>
     </div>
 
+    <!-- webpage footer -->
+    <footer class="container-fluid text-center">
+      <a href="north.html">Return to Top</a>
+    </footer>
 
-  <div class="row">
-    <div class="col-sm-6">
-      <h1>Santa's Workshop</h1><br>
-      <a href="workshop.html">
-        <button class="big-btn">Click here to go inside Santa's Workshop</button>
-      </a>
-    </div>
-  </div>
-
-  <br><hr><br>
-</div>
-
-
-
-
-<footer class="container-fluid text-center">
-  <a href="north.html">Return to Top</a>
-</footer>
-
-</body>
+  </body>
 </html>

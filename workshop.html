@@ -1,13 +1,13 @@
 <html lang="en">
     <head>
-    <title>Bootstrap Example</title>
+    <title>Santa's Workshop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <style>
-        /* Remove the navbar's default margin-bottom and rounded borders */ 
+        /* change colors of navbar to fit theme */ 
         .navbar {
         margin-bottom: 0;
         border-radius: 0;
@@ -33,12 +33,17 @@
             background-color:hsl(0, 0%, 100%);
         }
         
-        /* Add a gray background color and some padding to the footer */
+         /* set background and text color of footer */
         footer {
         background-color: #281a0d;
         padding: 25px;
         }
-        
+
+        footer a{
+            color:white !important;
+        }
+    
+         /* set body and jumbotron background and text colors */
         body{
             padding-top:50px;
         }
@@ -46,7 +51,8 @@
         .jumbotron{
         background-color: hsl(204, 91%, 26%);
         }
-    
+        
+         /* various classes that change the colors of text and background to fit theme  */
         .wood{
             background-image: url(https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_640.jpg);
             background-color: #a8835e;
@@ -73,7 +79,8 @@
     </style>
     </head>
     <body class="wood">
-
+        <!-- Set navbar links and labels -->
+        <!-- Set navbar as a sticky navbar -->
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
               <div class="navbar-header">
@@ -95,36 +102,37 @@
                         <li class="active"><a href="workshop.html" class="dropdown-item">Visit Santa's Workshop</a></li>
                     </ul>
                 </li>
-                  <li><a href="traditions.html">Traditions</a></li>
+                <li><a href="traditions.html">Traditions</a></li>
                 </ul>
-                
               </div>
             </div>
           </nav>
 
+    <!-- label of webpage content -->
     <div class="container-fluid bg-3 text-center bg-primary wood"> 
         <hr> <br> <br>
         <h1 class="dark-wood">Santa's Workshop</h1>
         <br><br>
+        <!-- row intruducing Santa's workshop supported with an image -->
         <div class="row">
             <div class="col-sm-6">
-            <br><br><br><br><br>
-            <h2 class="dark-wood">Where Santa spends most of his time, Where the magic happens!</h2>
+                <br><br><br><br><br>
+                <h2 class="dark-wood">Where Santa spends most of his time, Where the magic happens!</h2>
             </div>
 
             <div class="col-sm-6">
                 <img src="https://tiffanybliss.com/wp-content/uploads/2023/12/Santas-Workshop-1920-870x570.png" class="img-responsive center-block" style=width:100% alt="image of Santa's Workshop">
             </div>
             </div> 
-            <hr>
-            <br>
+            <hr><br>
         </div>
-
         <br><hr>
-
         </div>
+
         <br>
-        <div class="container-fluid bg-3 text-center white">   
+
+        <!-- section describing Santas elves -->
+    <div class="container-fluid bg-3 text-center white">   
         <h1 class="dark-wood">Santa's Helpers</h1><br>
             <div class="row">
                 <div class="col-sm-12">
@@ -139,7 +147,7 @@
         </div>
             <br>
             <br>
-
+        <!-- images showing the elves tasks -->
         <div class="row ">
             <div class="col-sm-3">
             <h4 class="dark-wood">Builds the Toys</h4>
@@ -159,44 +167,26 @@
             <div class="col-sm-3">
             <h4 class="dark-wood">Bake Christmas Cookies</h4>
             <img src="https://png.pngtree.com/png-vector/20241114/ourmid/pngtree-holiday-christmas-cookies-vector-illustration-png-image_14413916.png" class="img-responsive center-block" style=width:250px;height:300px alt="image of cookies">
-            
             </div>
         </div>
-        <br>
-        <br>
-        <br>
+        <br><br><br>
 
-        <!--<div class="row">
-            <div class="col-sm-3">
-                <img src="https://media.istockphoto.com/id/156312129/vector/santas-sack.jpg?s=612x612&w=0&k=20&c=BUq2eexlVX4Q3Wo6IsJYYqFC2roZGU-gXlJp-6eNz5g=" class="img-responsive center-block" style=width:95%;height:300px alt="image of toys">
-            </div>
-
-            <div class="col-sm-3">
-                <img src="https://img.freepik.com/premium-photo/drawing-christmas-tree-with-bunch-presents_577115-145415.jpg" class="img-responsive center-block" style=width:95%;height:300px alt="image of wrapped toys">
-            </div>
-
-            <div class="col-sm-3">
-                <img src="https://i.ebayimg.com/images/g/0KkAAOSwnDZUJYGm/s-l1200.jpg" class="img-responsive center-block" style=width:95%;height:300px alt="image of Reindeers">
-            </div>
-
-            <div class="col-sm-3">
-                <img src="https://media.istockphoto.com/id/156312129/vector/santas-sack.jpg?s=612x612&w=0&k=20&c=BUq2eexlVX4Q3Wo6IsJYYqFC2roZGU-gXlJp-6eNz5g=" class="img-responsive center-block" style=width:95%;height:300px alt="image of cookies">
-            </div>
-        </div>
-        </div><br><br>-->
-
-        
+    <!-- naughty or nice list -->
     <div class="container-fluid bg-3 text-center bg-primary wood">  
         <hr>
         <h2 class="dark-wood">Naughty or Nice</h2><br>
         <div class="row">
+            <!-- description of the lists -->
             <div class="col-sm-3">
             <h3 class="dark-wood">Every year Santa keeps a eye on every kid, watching their every action. Santa and his elves keep track of every good and bad action each kid takes. 
                 Santa then updates the Naughty and Nice list to decide who gets the best presents on Christmas. 
                 Those kids on the Naughty list will only recieve coal on the day of Christmas. Those kids on the Nice list will recieve a gift, specially crafted by Santa's helpers, from thier Chirstmas wishlist.</h2>
             <h4></h4>
             </div>
+
             <div class="col-sm-1"> </div>
+
+            <!-- the naughty list -->
             <div class="col-sm-3" id="paper"> 
             <h2>The Naughty List</h2>
             <h3>John</h3>
@@ -206,6 +196,8 @@
             <h3 id="naughtyIn"></h3>
             <br>
             </div>
+
+            <!-- the nice list -->
             <div class="col-sm-1"> </div>
             <div class="col-sm-3 " id="paper"> 
             <h2>The Nice List</h2>
@@ -220,20 +212,18 @@
         </div>
         
         <div class="row">
-            <div class="col-sm-3">
-            
-            </div>
+            <div class="col-sm-3"></div>
+
+            <!-- button to add the users name to a list -->
             <div class="col-sm-9">
-            
-            <button class="big-btn" onclick="myFunction()">Add Your Name To A List</button>
+                <button class="big-btn" onclick="myFunction()">Add Your Name To A List</button>
             </div>
         </div>
+
         <br><br> 
         </div>
-        <footer class="container-fluid text-center">
-            <a href="workshop.html">Return to Top</a>
-        </footer>
 
+        <!-- javaScript to add a users name to a list based on user input -->
         <script>
             function myFunction() {
                 
@@ -259,5 +249,10 @@
                 }
             }
         </script>
+
+        <!-- footer of webpage -->
+        <footer class="container-fluid text-center">
+            <a href="workshop.html">Return to Top</a>
+        </footer>
     </body>
 </html>

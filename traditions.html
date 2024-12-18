@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Christmas Traditions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* change colors of navbar to fit theme */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -33,41 +33,44 @@
         background-color:white;
     }
 
-    /* Add a gray background color and some padding to the footer */
+    /* set background and text color of footer */
     footer {
       background-color: #f2f2f2;
       padding: 25px;
       background-color: darkgreen;
     }
     
+    footer a{
+      color:white !important;
+    }
+
+    /* help with spacing */
     body{
         padding-top:50px;
     }
-
+    /* colors of the red portions of webpage */
     .cane{
         background-color: crimson;
         color: hsl(0, 0%, 100%);
     }
 
-    .tree{
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7f4MLRPnuEWQwuPL-rFI5ZNEICbt4mXkoFQ&s");
-        background: size width 100px;
-    }
-
+    /* set image of tre */
     .gift{
         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE26EcFsjyb3SYM-pl78e0sL5SbZV4s3jnBA&s");
         background: size height 100px;
     }
 
+    /* class to set text as white */
     .whitet{
         color:hsl(0, 0%, 100%)
     }
 
+    /* set the transition of the christmas tree image*/
     .treeI{
         width:50%;
         transition: background-image 0.1s ease-in-out;
     }
-
+    /* when hovered over change tree image to christmas tree */
     .treeI:hover{
         content: url("https://png.pngtree.com/png-clipart/20220923/ourmid/pngtree-3d-christmas-tree-decoration-png-image_6211039.png");
     }
@@ -83,7 +86,8 @@
   </style>
 </head>
 <body>
-
+    <!-- Set navbar links and labels -->
+    <!-- Set navbar as a sticky navbar -->
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -94,6 +98,7 @@
             </button>
             <a class="navbar-brand" href="#">Christmas Traditions</a>
           </div>
+
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
               <li ><a href="index.html">Home</a></li>
@@ -103,46 +108,46 @@
                     <li><a href="north.html" class="dropdown-item">Visit the North Pole</a></li>
                     <li><a href="santa.html" class="dropdown-item">Visit Santa</a></li>
                     <li><a href="workshop.html" class="dropdown-item">Visit Santa's Workshop</a></li>
-
                 </ul>
-            </li>
+              </li>
               <li><a href="traditions.html">Traditions</a></li>
             </ul>
-            
           </div>
         </div>
       </nav>
 
+<!-- label of webpage content -->
 <div class="jumbotron gift whitet">
   <div class="container text-center">
     <h1>Christmas Traditions</h1>      
   </div>
 </div>
   
+<!-- Christmas tree section-->
 <div class="container-fluid bg-3 text-center tree">    
   <h2 class="font-weight-bold">The Christmas Tree</h2>
   <br><br>
   <div class="row">
         <div class="col-sm-6">
+            <!-- text that prompts user to hover over image to change image -->
             <p>Hover to bring to life</p>
-            <img src="https://png.pngtree.com/png-clipart/20231001/original/pngtree-christmas-watercolor-pine-tree-png-image_13027360.png" class="img-responsive center-block treeI" style=width:50% alt="Symbol of the senate">
-            <!-- https://t3.ftcdn.net/jpg/09/33/76/20/360_F_933762081_NYlMqrzQURYhnkxVXcwlf384BBEDKOeF.jpg -->
+            <img src="https://png.pngtree.com/png-clipart/20231001/original/pngtree-christmas-watercolor-pine-tree-png-image_13027360.png" class="img-responsive center-block treeI" style=width:50% alt="image of tree">
         </div>
-
+        <!-- Christmas tree description -->
         <div class="col-sm-6">
              <h3>The Christmas Tree is a tradition that many American families participate in.</h3>
              <h3>According to Britannica, originating from Germany, "families set up a paradise tree in their homes on December 24, the religious feast day of Adam and Eve."</h3>
              <h3>The modern christmas tree is a universal symbol that carries both religious and secular meanings.</h3>
         </div>
     </div>
-    <br><br>
-    <br> 
+    <br><br><br> 
 </div>
 
+<!-- Christmas Presents section -->
 <div class="container-fluid bg-3 text-center gift whitet">  
-<hr>
+<hr><br>
+<h3>Christmas Gifts</h3>
 <br>
-<h3>Christmas Gifts</h3><br>
   <div class="row">
     <div class="col-sm-6">
       <!--<img src="https://png.pngtree.com/png-clipart/20211024/original/pngtree-christmas-gift-red-3d-package-png-image_6861061.png" class="img-responsive center-block" style=width:50% alt="Symbol of the senate">-->
@@ -156,13 +161,18 @@
   <br><br><hr>
 </div>
 
+<!-- Christmas cookie section -->
 <div class="container-fluid bg-3 text-center tree">   
 <h3>Christmas Cookies</h3><br>
 <div class="row">
+  <!-- cookies description -->
     <div class="col-sm-6">
-        <h3>It is common tradition in many American households to make cookies during the christmas cookies</h3>        
+      <br><br>
+        <h3>It is common tradition in many American households to make cookies during the christmas cookies</h3>    
+        <h3>Families leave out milk and cookies for Santa Claus to consume on his trip to their house</h3>   
+        <h3>This also symbolizes the giving spirit of the holidays</h3> 
     </div>
-
+    <!-- cookie images -->
     <div class="col-sm-3">
         <img src="https://png.pngtree.com/png-clipart/20231003/original/pngtree-christmas-cookies-snowman-png-image_13078761.png" class="img-responsive center-block" style=width:300px alt="image of snowman cookie">
     </div>
@@ -175,9 +185,12 @@
   <br><br> 
 </div>
 
+<!-- design choice to fit theme -->
 <div class="container-fluid bg-3 text-center gift whitet"> 
-  <br><hr><br>
+<br><hr><br>
 </div>
+
+<!-- footer code -->
 <footer class="container-fluid text-center">
     <a href="traditions.html">Return to Top</a>
 </footer>

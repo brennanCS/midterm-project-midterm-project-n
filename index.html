@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Christmas</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -9,7 +9,7 @@
   
   <style>
   
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* change colors of navbar to fit theme */ 
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
@@ -34,15 +34,17 @@
       background-color:hsl(0, 0%, 100%);
     }
     
-    /* Add a gray background color and some padding to the footer */
+     /* set background and text color of footer */
     footer {
       background-color:#2b4e27;
       padding: 25px;
     }
     
+     /* set body and jumbotron background and text colors */
     body{
         padding-top:50px;
-        background-color: #9e8974;
+        background-color: #0d0906;
+        color:#ffff;
     }
 
     .jumbotron{
@@ -58,7 +60,8 @@
   </style>
 </head>
 <body>
-
+<!-- Set navbar links and labels -->
+<!-- Set navbar as a sticky navbar -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -78,9 +81,8 @@
             <li><a href="north.html" class="dropdown-item">Visit the North Pole</a></li>
               <li><a href="santa.html" class="dropdown-item">Visit Santa</a></li>
               <li><a href="workshop.html" class="dropdown-item">Visit Santa's Workshop</a></li>
-
           </ul>
-      </li>
+            </li>
         <li><a href="traditions.html">Traditions</a></li>
       </ul>
       
@@ -88,6 +90,7 @@
   </div>
 </nav>
 
+<!-- label of webpage content -->
 <div class="jumbotron white">
   <div class="container text-center">
     <h1 class="font-weight-bold">Christmas</h1>      
@@ -95,27 +98,32 @@
   </div>
 </div>
   
+<!-- the "elements of christmas" with three images each linking to the corrosponding webpage when clicked -->
 <div class="container-fluid bg-3 text-center">    
   <h2 class="font-weight-bold">Elements of Christmas</h2>
   <br><hr><br>
   <div class="row">
+    <!-- north pole image -->
     <div class="col-sm-4">
       <h3>The North Pole</h3>
       <a href="north.html" ><img src="https://www.hsdbackdrops.com/cdn/shop/files/CHS44410x8christmasnorthpolebackdrop_1800x1800.jpg?v=1686936698" class="img-responsive" style="width:100%;height:400px;" alt="image of north pole"></a>
     </div>
+
+    <!-- Santa Claus image -->
     <div class="col-sm-4"> 
       <h3>Santa Claus</h3>
       <a href="santa.html" ><img src="https://img.artpal.com/357882/42-23-11-1-11-34-5m.jpg" class="img-responsive" style="width:100%" alt="image of santa"></a>
     </div>
+
+    <!-- Christmas Traditions image -->
     <div class="col-sm-4"> 
       <h3>Traditions</h3>
       <a href="traditions.html" ><img src="https://i.etsystatic.com/47818389/r/il/cf94ad/5491716564/il_570xN.5491716564_g8ff.jpg" class="img-responsive" style="width:100%" alt="image of christmas"></a>
     </div>
-    
   </div>
 </div><br>
 
-
+<!-- webpage footer -->
 <footer class="container-fluid text-center">
   <a href="index.html">Return to Top</a>
 </footer>
