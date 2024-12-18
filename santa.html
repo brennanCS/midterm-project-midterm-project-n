@@ -163,24 +163,8 @@
 
         <div class="col-sm-2 cookie">
           <img src="https://png.pngtree.com/png-vector/20241114/ourmid/pngtree-christmas-gingerbread-cookies-clipart-png-image_14421252.png" class="img-responsive center-block" style=width:200px alt="image of cookies">
-      </div>
+        </div>
     </div>
-
-    <!-- JavaScript to make Santa image bigger per click of cookies -->
-    <script>
-        var clicks =0;
-        let scale = 1;
-        $(".cookie").click(function(){
-            if(clicks <10){
-                scale+=0.05;
-                $(".santa img").css("transform", "scale(" + scale + ")");
-                clicks++;
-            }
-            else{
-                alert("Santa is too full! No more cookies.")
-            }
-        });
-    </script>
 
     </div>
 
@@ -190,5 +174,21 @@
     <footer class="container-fluid text-center cane">
         <a href="santa.html">Return to Top</a>
     </footer>
+
+    <!-- JavaScript to make Santa image bigger per click of cookies -->
+    <script>
+      var clicks =0;
+      let scale = 1;
+      $(".cookie").click(function(){
+          if(clicks <10){
+              scale+=0.05;
+              $(".santa img").css("transform", "scale(" + scale + ")");
+              clicks++;
+          }
+          else{
+              alert("Santa is too full! No more cookies.")
+          }
+      });
+    </script>
 </body>
 </html>
